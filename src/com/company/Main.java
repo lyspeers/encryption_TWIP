@@ -7,6 +7,8 @@ public class Main {
 	StringBuilder x = new StringBuilder
 	x.append("HI")
 	use Integer.parseInt() with a string to get decryption key from user input
+	int i = Integer.parseInt("576")
+	SOP i + 4 outputs 580
 	 */
     }
 }
