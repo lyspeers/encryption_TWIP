@@ -12,13 +12,20 @@ public class Main {
 
 	Instead using getNumericValue(String.charAt())
 	simplified to (mKey.charAt(0)-'0'));
-	the - 0 is to t=get the numeric vakue since all the number ASCII codes - the 0 ASCII code gives you the original number
+	the - 0 is to to get the numeric value since all the number ASCII codes - the 0 ASCII code gives you the original number
 	 */
-	Encryptor y = new Encryptor("Hi there how are you");
-	System.out.println(y.encrypted);
-	Scanner de = new Scanner(System.in);
-	String k = de.next();
-	y.decryptor(k);
+		Scanner in = new Scanner(System.in);
+		System.out.println("What would you like to be encrypted");
+		String c = in.nextLine();
+
+		Encryptor y = new Encryptor(c);
+		System.out.println(y.encrypted);
+
+
+		Scanner de = new Scanner(System.in);
+		System.out.println("PLease input your key");
+		String k = de.next();
+		y.decryptor(k);
     }
 
 }
